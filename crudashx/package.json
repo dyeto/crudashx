@@ -4,6 +4,7 @@
   "description": "Fast React Dashboard on top of REST APIs",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
+  "sideEffects": ["*.css"],
   "files": [
     "dist"
   ],
@@ -33,12 +34,21 @@
     "@rollup/plugin-node-resolve": "^15.0.1",
     "@rollup/plugin-terser": "^0.2.1",
     "@rollup/plugin-typescript": "^10.0.1",
-    "@types/react": "^19.2.2",
-    "react": "^19.2.0",
-    "rollup": "^4.52.5",
-    "rollup-plugin-dts": "^6.2.3",
+    "@tailwindcss/postcss": "^4.1.15",
+    "@types/react": "^18.0.26",
+    "autoprefixer": "^10.4.21",
+    "nodemon": "^2.0.20",
+    "postcss": "^8.5.6",
+    "rollup": "^3.9.0",
+    "rollup-plugin-dts": "^5.1.0",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
     "rollup-plugin-postcss": "^4.0.2",
-    "tslib": "^2.8.1",
-    "typescript": "^5.9.3"
+    "tailwindcss": "^4.1.15",
+    "tslib": "^2.4.1",
+    "typescript": "^4.9.4"
+  },
+  "peerDependencies": {
+    "axios": "^1.2.2",
+    "react": "^18.2.0"
   }
 }

@@ -19,6 +19,7 @@
      "emitDeclarationOnly": true,
 
      //new
-     "lib": [ "es2015" ]
-  }
+     "lib": [ "es2015","DOM" ]
+  },
+  "include": ["src"],
 }
